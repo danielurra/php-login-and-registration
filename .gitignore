@@ -1,8 +1,2 @@
 test.txt
-.idea/deployment.xml
-.idea/vcs.xml
-.idea/encodings.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/phplogreg.tulamp.local.iml
-.idea/workspace.xml
+/.idea
