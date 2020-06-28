@@ -1,3 +1,9 @@
+<?php
+// allow the config
+define('_CONFIG_', true);
+// require the config
+require_once "inc/config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,31 +21,19 @@
 
 <body>
     <div class="uk-section uk-container">
-        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
-            <form class="uk-form-stacked js-login">
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Email</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text-email" type="email" required='required' placeholder="email@email.com">
-                    </div>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Password</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text-passwd" type="password" required='required' placeholder="Your Password">
-                    </div>
-                </div>
-                <div class="uk-margin">
-                    <button class="uk-button uk-button-default" type="submit">Login</button>
-                </div>
-            </form>
-        </div>
+        <?php
+        echo "Hello World, Today is: ";
+        echo date("Y m d");
+        ?>
+        <p>
+            <a href="./login.php">Login</a>
+            <a href="./register.php">Register</a>
+        </p>
     </div>
-    <!-- jQuery is required -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
+    <?php require_once "inc/footer.php"; ?>
+
+
 </body>
 
 </html>
